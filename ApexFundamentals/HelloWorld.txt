@@ -1,0 +1,4 @@
+// The following lines of code output messages to the debug log in Salesforce 
+System.debug('Hello World');
+
+System.debug('This is my first Apex program');
