@@ -1,0 +1,44 @@
+/* 
+Integer rollNum1 = 11008890; 
+System.debug('rollNum1: ' + rollNum1);
+Integer rollNum2 = 11008100;
+System.debug('rollNum2: ' + rollNum2);
+Integer rollNum3 = 11007231;
+System.debug('rollNum3: ' + rollNum3);
+*/
+
+List<Integer> rollNumbers - new List<Integer>{11008890, 11008100, 11007231};
+System.debug('rollNumbers: ' + rollNumbers);
+
+
+rollNumbers.add(89897767);
+rollNumbers.add(89897764);
+rollNumbers.add(89897765);
+
+System.debug(rollNumbers);
+
+// get item on index 1
+integer rollNum = rollNumbers.get(1); 
+System.debug('rollNum: ' + rollNum);
+System.debug(rollNumbers.get(1));
+
+// add item on index 4 
+rollNumbers.add(4, 99990000);
+System.debug(rollNumbers);
+
+
+// get the list size 
+System.debug(rollNumbers.size());
+
+// remove the item on index 3 
+rollNumbers.remove(3);
+System.debug(rollNumbers);
+System.debug(rollNumbers.size());
+
+// update item on index 1 
+rollNumbers.set(1, 44444444);
+System.debug(rollNumbers);
+
+// clear the list 
+rollNumbers.clear(); 
+
