@@ -10,6 +10,9 @@ System.debug(rollNumber);
 Long worldPopulation = 7000000000L;
 System.debug(worldPopulation);
 
+Decimal myCgpa = 8.5; 
+System.debug(myCgpa);
+
 Double lightSpeed = 93000000/186000;
 System.debug(lightSpeed);
 
@@ -35,6 +38,9 @@ System.debug(rollNumber);
 
 Long worldPopulation;
 System.debug(worldPopulation);
+
+Decimal myCgpa
+System.debug(myCgpa);
 
 Double lightSpeed;
 System.debug(lightSpeed);
