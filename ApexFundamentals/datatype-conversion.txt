@@ -1,0 +1,15 @@
+String physicsMarks = '72'
+String chemistryMarks = '64'
+String mathsMarks = '87'; 
+
+// String concatenation
+String total = physicsMarks + chemistryMarks + mathsMarks; // String concatenation
+System.debug('Total Marks: ' + total); // Output: 726487
+
+// Integer conversion
+Integer total = Integer.valueOf(physicsMarks) + Integer.valueOf(chemistryMarks) + Integer.valueOf((mathsMarks); // String concatenation
+System.debug('Total Marks: ' + total); // Output: 223
+
+// Integer conversion with String concatenation
+String total = String.valueOf(Integer.valueOf(physicsMarks) + Integer.valueOf(chemistryMarks) + Integer.valueOf((mathsMarks));
+System.debug('Total Marks: ' + total); // Output: 223
