@@ -1,0 +1,124 @@
+// assignment operator 
+Integer x = 5; 
+System.debug('assignment assignment operator - '+x);
+
+// addition operator 
+x = x + 5; 
+System.debug('addition assignment operator - '+x);
+
+// subtraction operator
+x = x - 5;
+System.debug('subtraction assignment operator - '+x);
+
+// multiplication operator
+x = x * 5;
+System.debug('multiplication assignment operator - '+x);
+
+// division operator
+x = x / 5;
+System.debug('division assignment operator - '+x);
+
+// x = x + 1; 
+// increment operator
+x++; 
+System.debug(x); 
+
+// decrement operator
+x--; // x = x - 1;
+System.debug(x);
+
+// addition assignment operator
+// x = x + 5; // addition operator
+x += 5; // x = x + 5;
+System.debug(x); 
+
+// subtraction assignment operator
+x -= 5; // x = x - 5;
+System.debug(x); 
+
+// multiplication assignment operator
+x *= 5; // x = x * 5;
+System.debug(x);
+
+// division assignment operator
+x /= 5; // x = x / 5;
+System.debug(x);
+
+// using addition operator on strings
+String hello = "Hello"; 
+String world = "World";
+
+System.debug(hello + world); // HelloWorld
+System.debug(hello + " " + world); // Hello World
+
+Boolean first = true; 
+Boolean second = false;
+Boolean result;
+
+// Logical Operators
+// Logical operators are used to combine two or more boolean expressions.
+// The result of a logical operator is always a boolean value (true or false).
+// Logical operators in Apex include AND (&&), OR (||), and NOT (!).
+
+//AND Operator
+result = first && second;// both first and second is true, then final is true, else it is false
+System.debug('And Operator - '+result);
+
+//OR Operator
+result  = first || second;// both first and second is false, then final is false, else it is true
+System.debug('OR Operator - '+result);
+
+// Equality operator
+result = (first == second); // if both expressions have the same value, then true, else false
+System.debug('Equality Operator Boolean - '+result);
+result = (5 == 5);
+System.debug('Equality Operator Integer - '+result);
+result = ('Hello' == 'World');
+System.debug('Equality Operator String - '+result);
+
+//Less than operator 
+result = (5 < 6); 
+System.debug('Less than Operator - '+result);
+
+//Greater than operator
+result = (5 > 6);
+System.debug('Greater than Operator - '+result);
+
+//Less than or equal to operator
+result = (5 <= 6);
+System.debug('Less than or equal to Operator - '+result);
+result = (6 <= 6);
+System.debug('Less than or equal to Operator 2 - '+result);
+
+//Greater than or equal to operator
+result = (5 >= 6);
+System.debug('Greater than or equal to Operator - '+result);
+result = (6 <= 6);
+System.debug('Less than or equal to Operator 2 - '+result);
+
+// NOT operator
+System.debug('NOT Operator before- '+first); // false
+first = !first; 
+System.debug('NOT Operator after - '+first); // false
+
+// Ternary Operator
+String greeting = '';
+Integer hour = 10; 
+// if hour is less than 12, then greeting should be good morning
+// else greeting should be good afternoon
+(hour < 12) ? 'Good Morning' : 'Good Afternoon';
+System.debug('Ternary operator 10 - '+ greeting);
+hour = 13;
+greeting = (hour < 12) ? 'Good Morning' : 'Good Afternoon';
+System.debug('Ternary operator 13 - '+ greeting);
+
+
+//Challenge
+// if hour < 12 = Good morning
+// if hour > 12 && hour < 5 = Good Afternoon
+// else Good Evening
+
+hour = 3;
+greeting = (hour < 12) ? 'Good Morning' : 
+        (hour > 12 && hour < 5) ? 'Good Afternoon' : 'Good Evening';
+System.debug('Ternary operator 3 - '+ greeting);
